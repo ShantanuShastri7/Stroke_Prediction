@@ -45,7 +45,7 @@ Before F1 score we have to know **Precision** and **Recall**
 **Recall** -In simple terms means, what percentage of actual positive predictions were correctly classified by the classifier.
 ![Recall](https://miro.medium.com/max/431/1*5OA6GNFIl-_VcRbxv6sITg.png)   
 
-Now **F1 score** is calculated as 
+Now **F1 score** is calculated as    
 ![F1](https://miro.medium.com/max/303/1*ZMWbXzr6y1sLxJzbtAkkDQ.png)   
 
 Better the F1 score, better is the model.
