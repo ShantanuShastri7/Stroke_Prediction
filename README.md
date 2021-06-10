@@ -41,17 +41,17 @@ If we plot the predicted values against the ground truth (actual) values, we get
 We'll calculate which models works the best by calculating the F1 scores of all the models and comparing them.
 Before F1 score we have to know **Precision** and **Recall**  
 **Precison** -In simple terms, precision means what percentage of the positive predictions made were actually correct.
-![precision](https://miro.medium.com/max/444/1*_cYPzG5XV7XaWBRKB-pqWQ.png)
+![precision](https://miro.medium.com/max/444/1*_cYPzG5XV7XaWBRKB-pqWQ.png)   
 **Recall** -In simple terms means, what percentage of actual positive predictions were correctly classified by the classifier.
-![Recall](https://miro.medium.com/max/431/1*5OA6GNFIl-_VcRbxv6sITg.png)
+![Recall](https://miro.medium.com/max/431/1*5OA6GNFIl-_VcRbxv6sITg.png)   
 
 Now **F1 score** is calculated as 
-![F1](https://miro.medium.com/max/303/1*ZMWbXzr6y1sLxJzbtAkkDQ.png)
+![F1](https://miro.medium.com/max/303/1*ZMWbXzr6y1sLxJzbtAkkDQ.png)   
 
 Better the F1 score, better is the model.
 
 ### Link to the dataset is given below
-[Stroke Prediction Dataset](https://www.kaggle.com/fedesoriano/stroke-prediction-dataset "Stroke Predcition Dataset")
+[Stroke Prediction Dataset](https://www.kaggle.com/fedesoriano/stroke-prediction-dataset "Stroke Predcition Dataset")   
 
 ## Importing all the required libraries 
 ```python
