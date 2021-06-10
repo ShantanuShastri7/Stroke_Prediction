@@ -28,24 +28,24 @@ In such scenarios Confusion matrix comes to a great help.
 To understand the confusion matrix let us consider a two-class classification problem with the two outcomes being “Positive” and “Negative”. Given a data point to predict, the model’s outcome will be any one of these two.
 If we plot the predicted values against the ground truth (actual) values, we get a matrix with the following representative elements:
 
-**True Positives (TP)**: These are the data points whose actual outcomes were positive and the algorithm correctly identified it as positive.
+__True Positives (TP)__: These are the data points whose actual outcomes were positive and the algorithm correctly identified it as positive.
 
-**True Negatives (TN)**: These are the data points whose actual outcomes were negative and the algorithm correctly identified it as negative.
+__True Negatives (TN)__: These are the data points whose actual outcomes were negative and the algorithm correctly identified it as negative.
 
-**False Positives (FP)**: These are the data points whose actual outcomes were negative but the algorithm incorrectly identified it as positive.
+__False Positives (FP)__: These are the data points whose actual outcomes were negative but the algorithm incorrectly identified it as positive.
 
-**False Negatives (FN)**: These are the data points whose actual outcomes were positive but the algorithm incorrectly identified it as negative.
+__False Negatives (FN)__: These are the data points whose actual outcomes were positive but the algorithm incorrectly identified it as negative.
 
 ![Confusion matrix](https://miro.medium.com/max/546/1*h1MBLDA6bPxNpxwgSD1xNA.png)
 
 We'll calculate which models works the best by calculating the F1 scores of all the models and comparing them.
 Before F1 score we have to know **Precision** and **Recall**  
-**Precison** -In simple terms, precision means what percentage of the positive predictions made were actually correct.
+__Precison__ -In simple terms, precision means what percentage of the positive predictions made were actually correct.
 ![precision](https://miro.medium.com/max/444/1*_cYPzG5XV7XaWBRKB-pqWQ.png)   
-**Recall** -In simple terms means, what percentage of actual positive predictions were correctly classified by the classifier.
+__Recall__ -In simple terms means, what percentage of actual positive predictions were correctly classified by the classifier.
 ![Recall](https://miro.medium.com/max/431/1*5OA6GNFIl-_VcRbxv6sITg.png)   
 
-Now **F1 score** is calculated as    
+Now __F1 score__ is calculated as    
 ![F1](https://miro.medium.com/max/303/1*ZMWbXzr6y1sLxJzbtAkkDQ.png)   
 
 Better the F1 score, better is the model.
