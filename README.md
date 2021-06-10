@@ -120,21 +120,30 @@ training_data, testing_data = train_test_split(features, test_size=0.3, random_s
 sns.countplot(x=df['stroke'])
 plt.title("no of patients affected by stroke")
 plt.show()
+```
+[histogram of stroke vs no stroke](hist_stroke.PNG)
 
+```python
 sns.countplot(x=df['stroke'],hue=df['gender'])
+```
+[count plot of stroke vs gender](count_stroke_gender.PNG)
 
+```python
 dff=df[df.stroke==1]
 
 sns.histplot(x=dff['stroke'],hue=df['smoking_status'],stat="frequency",multiple="dodge")
+```
+[count plot of stroke vs smoking status](count_stroke_smoking.PNG)
 
+```python
 corr_matrix=df.corr()
 ```
-
 ## Correlation matrix for all the parameters
 ```python
 sns.heatmap(corr_matrix, annot=True)
 plt.show()
 ```
+[Correlation matrix](Corr.PNG)
 
 ## Naive Bayes
 ```python
@@ -147,14 +156,23 @@ model.fit(x_train,y_train)
 predict=model.predict(x_test)
 score=model.score(x_test,y_test)
 score
-
+```
+[score](NB_score.PNG)
+```python
 cv_results=cross_validate(model,x_train,y_train,cv=5)
 cv_results
+```
+[CV](NB_CV.PNG)
+```python
 confusion=pd.crosstab(y_test,predict)
 confusion
+```
+[confusion matrix](NB_confusion.PNG)
+```python
 nb_report=classification_report(y_test,predict)
 print(nb_report)
 ```
+[F1 score](NB_F1.PNG)
 
 ## Decision Tree
 ```python
@@ -163,12 +181,18 @@ dt_mod.fit(x_train,y_train)
 y_predict=dt_mod.predict(x_test)
 confusion=pd.crosstab(y_test,y_predict)
 confusion
+```
+[confusion matrix](DT_confusion.PNG)
+```python
 score=dt_mod.score(x_train,y_train)
 score
+```
+[score](DT_score.PNG)
+```python
 nb_report=classification_report(y_test,y_predict)
 print(nb_report)
 ```
-
+[F1 score](DT_F1.PNG)
 ## Multi Layer Perceptron (MLP)
  ```python
  mlp_model=MLPClassifier()
@@ -176,12 +200,20 @@ print(nb_report)
  mlp_predict=mlp_model.predict(x_test)
  confusion=pd.crosstab(y_test,mlp_predict)
 confusion
+```
+[confusion matrix](MLP_confusion.PNG)
+```python
 score=mlp_model.score(x_test,y_test)
 score
+```
+[score](MLP_score.PNG)
+```python
 mlp_report=classification_report(y_test,mlp_predict)
 print(mlp_report)
 ```
+[F1 score](MLP_F!.PNG)
 
 ## Comparing the F1 scores of different models 
+[comparison](FINAL_F1.PNG)
 #### Out of the three models that I used, Multi Layer Perceptron which is based on Neural Network was able the get the highest F1 score
 
